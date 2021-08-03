@@ -11,7 +11,7 @@
     <context:component-scan base-package="com.wang.service"/>
 
     <!--将我们所有的业务类，注入到Spring，可以通过配置或者注解实现-->
-    <bean id="BookServiceImpl" class="com.wang.service.BookServiceImpl">
+    <bean id="bookServiceImpl" class="com.wang.service.BookServiceImpl">
         <property name="bookMapper" ref="bookMapper"/>
     </bean>
 
