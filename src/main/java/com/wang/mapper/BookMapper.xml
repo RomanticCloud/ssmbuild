@@ -9,7 +9,8 @@
     </insert>
 
     <delete id="deleteBook" parameterType="int">
-        delete from ssmbuild.books
+        delete
+        from ssmbuild.books
         where bookId = #{bookId};
     </delete>
 
@@ -20,7 +21,8 @@
     </update>
 
     <select id="queryBooksById" resultType="Books">
-        select * from ssmbuild.books
+        select *
+        from ssmbuild.books
         where bookId=#{bookId};
     </select>
 
